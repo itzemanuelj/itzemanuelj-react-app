@@ -1,0 +1,42 @@
+/* Navbar.css */
+.navbar {
+    overflow: hidden;
+    background-color: #333; /* Change to your desired color */
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .navbar a {
+    display: flex;
+    align-items: center;
+    color: white; /* Change text color */
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd; /* Change hover color */
+    color: black; /* Change hover text color */
+  }
+  
+  .navbar .icon {
+    display: none; /* Hide the icon by default */
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 600px) {
+    .navbar a {
+      display: none; /* Hide all links by default */
+    }
+    .navbar a.icon {
+      display: flex; /* Show the icon */
+    }
+    .navbar.responsive {
+      position: relative;
+    }
+    .navbar.responsive a {
+      display: block; /* Show links when in responsive mode */
+      text-align: left;
+    }
+  }
+  
